@@ -10,3 +10,13 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: under
 */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    background: aquamarine;
+    color: grey;
+    font-size: 2rem;
+}
