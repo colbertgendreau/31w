@@ -1,3 +1,8 @@
 body {
-    background: #0f0;
+    width: 500px;
+    margin: 20px auto;
+    background: $couleur__background-body;
+    font-family: $police__main;
+    text-shadow: 0 0 10px $couleur__text-shadow-body;
+    text-align: center;
 }
