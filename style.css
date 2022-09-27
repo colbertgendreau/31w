@@ -357,8 +357,8 @@ h2 {
   color: rgb(255, 0, 242);
 }
 
-small, pre, code {
-  background: rgb(255, 251, 0);
+small, pre, code, span {
+  background: rgba(255, 251, 0, 0.404);
   margin: 10px;
 }
 
