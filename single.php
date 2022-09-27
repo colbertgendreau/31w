@@ -21,7 +21,21 @@ get_header(); ?>
                 while ( have_posts() ) :
                     the_post();
                     the_title('<h2>', '</h2>');
-                    the_content(null, true);
+                    the_content(null, true); ?>
+                    <section>
+                        <small>
+                            <span><?php the_weekday();?></span>
+                            <span><?php the_date();?></span>
+                            <span><?php the_time();?></span>
+                        </small>
+                        <code>
+                            <span><?php the_author();?></span>
+                        </code>
+                        <pre>
+                            <span><?php the_category();?></span>
+                        </pre>
+                    </section>
+                    <?php
                 endwhile;
             endif;
             ?>
