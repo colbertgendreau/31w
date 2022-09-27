@@ -1,4 +1,4 @@
-/* Theme Name: exercice
+/* Theme Name: 31W-Colbert Gendreau
 Theme URI: http://underscores.me/
 Author: colbert
 Author URI: http://underscores.me/
@@ -8,7 +8,7 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: under
+Text Domain: 31w
 */
 /*--------------------------------------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -339,6 +339,10 @@ body {
   font-family: "Courier New", Courier, monospace;
   text-shadow: 0 0 5px rgb(255, 255, 255);
   text-align: center;
+}
+
+.trace {
+  background-color: greenyellow;
 }
 
 h1 {
