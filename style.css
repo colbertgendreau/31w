@@ -355,4 +355,29 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   color: rgb(255, 0, 242);
+}
+
+small, pre, code {
+  background: rgb(255, 251, 0);
+  margin: 10px;
+}
+
+pre {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: rgb(204, 0, 255);
+}
+a:visited {
+  color: rgb(255, 255, 255);
+}
+a:hover, a:focus, a:active {
+  color: rgb(77, 77, 77);
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
