@@ -3,13 +3,24 @@
     
     
     .menu { // ul
+        display: flex;
+        justify-content: space-between;
         list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
     .menu-item { // li
+        background: rgb(133, 133, 133);
+
+    }
+    .menu-item:hover {
+        background: #555;
 
     }
     a {
         text-decoration: none;
+        color: #fff;
+        padding: 10px;
 
     }
 }

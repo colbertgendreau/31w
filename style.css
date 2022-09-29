@@ -15,6 +15,7 @@ Text Domain: 31w
 /*------------------------------ couleur fields input text */
 /*------------------------------ couleur hr (ligne horizontale) */
 /*------------------------------ simple */
+/*------------------------------ couleur de navigation */
 /*------------------------ simple */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -559,10 +560,22 @@ big {
 }
 
 .menu-primaire-container .menu {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-primaire-container .menu-item {
+  background: rgb(133, 133, 133);
+}
+.menu-primaire-container .menu-item:hover {
+  background: #555;
 }
 .menu-primaire-container a {
   text-decoration: none;
+  color: #fff;
+  padding: 10px;
 }
 
 /* transformation en CSS *//*# sourceMappingURL=style.css.map */
