@@ -561,4 +561,8 @@ big {
 .menu-primaire-container .menu {
   list-style-type: none;
 }
+.menu-primaire-container a {
+  text-decoration: none;
+}
+
 /* transformation en CSS *//*# sourceMappingURL=style.css.map */
