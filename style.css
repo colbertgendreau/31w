@@ -556,4 +556,9 @@ ins {
 
 big {
   font-size: 125%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.menu-primaire-container .menu {
+  list-style-type: none;
+}
+/* transformation en CSS *//*# sourceMappingURL=style.css.map */
