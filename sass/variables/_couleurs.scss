@@ -12,3 +12,26 @@ $couleur__background--code : rgba(255, 251, 0, 0.404);
 $couleur__link : rgb(204, 0, 255);
 $couleur__link-visited : rgb(255, 255, 255);
 $couleur__link-hover : rgb(77, 77, 77);
+
+/*------------------------------ couleur boutons */
+
+$color__border-button: rgb(70, 70, 70);
+$color__background-button:rgb(165, 165, 165);
+$color__border-button-hover:rgb(0, 0, 0);
+$color__border-button-focus:rgb(27, 27, 27);
+
+/*------------------------------ couleur fields input text */
+
+$color__text-input: rgb(20, 20, 20);
+$color__border-input:rgb(78, 78, 78);
+$color__text-input-focus: #333;
+
+/*------------------------------ couleur hr (ligne horizontale) */
+
+$color__background-hr: rgb(175, 146, 175);
+
+/*------------------------------ simple */
+
+$color__background-pre : rgb(153, 192, 141);
+$color__border-abbr : rgb(149, 141, 192);
+$color__background-ins : rgb(192, 141, 141);
