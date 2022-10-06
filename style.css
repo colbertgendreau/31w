@@ -10,7 +10,7 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: 31w
 */
-/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/ /*------------------------------ couleur liens */
 /*------------------------------ couleur boutons */
 /*------------------------------ couleur fields input text */
 /*------------------------------ couleur hr (ligne horizontale) */
@@ -464,6 +464,22 @@ a:hover, a:active {
   outline: 0;
 }
 
+.menu a {
+  color: rgb(204, 0, 255);
+}
+.menu a:visited {
+  color: rgb(255, 255, 255);
+}
+.menu a:hover, .menu a:focus, .menu a:active {
+  color: rgb(77, 77, 77);
+}
+.menu a:focus {
+  outline: thin dotted;
+}
+.menu a:hover, .menu a:active {
+  outline: 0;
+}
+
 ul,
 ol {
   margin: 0 0 1.5em 3em;
@@ -582,6 +598,18 @@ big {
 }
 
 /* transformation en CSS */
+.menu__aside {
+  margin: 10px;
+}
+.menu__aside .menu {
+  margin: 0;
+  padding: 0;
+}
+.menu__aside .menu-item {
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+}
 .site {
   display: grid;
   grid-template-columns: 25% auto;
