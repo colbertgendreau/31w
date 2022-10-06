@@ -579,12 +579,13 @@ big {
 
 .menu__primaire .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .menu__primaire .menu-item {
+  flex: 1;
   background: rgb(133, 133, 133);
 }
 .menu__primaire .menu-item:hover {
