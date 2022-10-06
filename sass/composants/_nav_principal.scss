@@ -1,7 +1,5 @@
-.menu-primaire-container { // nav
-    
-    
-    
+.menu__primaire { // nav
+
     .menu { // ul
         display: flex;
         justify-content: space-between;
@@ -18,11 +16,12 @@
 
     }
     a {
+        display: block;
         text-decoration: none;
         color: #fff;
         padding: 10px;
 
     }
-}
+} // fin .menu__primaire
 
 /* transformation en CSS */

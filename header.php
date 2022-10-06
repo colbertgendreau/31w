@@ -26,6 +26,10 @@
     <?php wp_body_open(); ?>
     <div id="page" class="site">
         <header id="masthead" class="site-header">
+        <?php // Affichage du menu primaire
+        wp_nav_menu(array(  "menu" => "Primaire",
+                            "container" => "nav",
+                            "container_class" => "menu__primaire")); ?>
             <div class="site-branding">
                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                 <?php
@@ -36,5 +40,4 @@
                                                 ?></p>
                 <?php endif; ?>
             </div><!-- .site-branding -->
-            <?php wp_nav_menu(array("menu" => "Primaire", "container" => "nav")); ?>
         </header><!-- #masthead -->

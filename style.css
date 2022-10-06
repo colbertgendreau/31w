@@ -559,20 +559,21 @@ big {
   font-size: 125%;
 }
 
-.menu-primaire-container .menu {
+.menu__primaire .menu {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.menu-primaire-container .menu-item {
+.menu__primaire .menu-item {
   background: rgb(133, 133, 133);
 }
-.menu-primaire-container .menu-item:hover {
+.menu__primaire .menu-item:hover {
   background: #555;
 }
-.menu-primaire-container a {
+.menu__primaire a {
+  display: block;
   text-decoration: none;
   color: #fff;
   padding: 10px;
