@@ -7,20 +7,20 @@
 		"footer footer";
 }
 
-.site-header {
+.site__header {
 	grid-area: header;
 }
 
-.site-main {
+.site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget-area {
+.widget__area {
 	grid-area: sidebar;
 }
 
-.site-footer {
+.site__footer {
 	grid-area: footer;
 }
 

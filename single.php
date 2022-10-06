@@ -1,3 +1,4 @@
+<?php
 
 /**
  * The main template file
@@ -12,10 +13,9 @@
  * @package underscore
  */
 <h1 class="trace">single.php</h1>
-<?php
 get_header(); ?>
 
-        <main>
+        <main class="class__main">
             <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :
