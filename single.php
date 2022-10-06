@@ -12,8 +12,10 @@
  *
  * @package underscore
  */
-<h1 class="trace">single.php</h1>
-get_header(); ?>
+?>
+<!-- <h1 class="trace">single.php</h1> -->
+
+<?php get_header(); ?>
 
         <main class="class__main">
             <?php

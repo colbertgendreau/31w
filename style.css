@@ -341,9 +341,12 @@ html {
 body {
   width: 100%;
   margin: 20px auto;
-  background: rgb(55, 182, 255);
+  background: rgb(39, 39, 39);
   font-family: "Courier New", Courier, monospace;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+body p {
+  color: rgb(255, 255, 255);
 }
 
 .trace {
@@ -428,15 +431,14 @@ textarea {
 
 h1 {
   font-family: fantasy;
-  text-align: center;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: "Comic sans";
 }
 
 h2 {
   color: rgb(255, 0, 242);
+}
+
+h3, h4, h5, h6 {
+  font-family: "Comic sans";
 }
 
 hr {
