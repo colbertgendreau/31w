@@ -1,5 +1,8 @@
-.menu__aside {
+.widget__area {
     margin: 10px;
+    
+}
+.menu__aside {
     .menu {
         margin: 0;
         padding: 0;
@@ -8,10 +11,11 @@
     .menu-item {
         font-size: 12px;
         list-style: none;
-        text-decoration: none;
-
+        padding: 5px 0;
+        
     }
     a {
+        text-decoration: none;
 
     }
 
