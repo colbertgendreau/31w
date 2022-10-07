@@ -78,6 +78,13 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 		if ($arg->menu == "aside"){
 			// print_r($value);
 			$value->title = substr($value->title,7);
+
+			$arrayValue = explode("(", $value->title);
+
+			array_splice($arrayValue, -1);
+
+			$value->title = implode("(", $arrayValue);
+
 			// echo $value->title . '<br>';
 		}
 		$value->title = wp_trim_words($value->title,3,"...");
