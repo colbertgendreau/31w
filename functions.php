@@ -72,12 +72,10 @@ function mon_31w_register_nav_menu(){
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 /************ pour filtrer chacun des elements du menu */
-function igc31w_filtre_choix_menu($obj_menu){
+function igc31w_filtre_choix_menu($obj_menu, $arg){
     //var_dump($obj_menu);
-    foreach($obj_menu as $cle => $value)
-    {
-		if ($value->title[0] >= 0 && $value->title[0] <= 10) {
-
+    foreach($obj_menu as $cle => $value) {
+		if ($arg->menu == "aside"){
 			// print_r($value);
 			$value->title = substr($value->title,7);
 			// echo $value->title . '<br>';
@@ -87,4 +85,4 @@ function igc31w_filtre_choix_menu($obj_menu){
     }
     return $obj_menu;
 }
-add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10, 2);
