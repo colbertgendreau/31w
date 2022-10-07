@@ -1,11 +1,3 @@
-.site {
-	display: grid;
-	grid-template-columns: ($size__site-sidebar) auto;
-	grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
-}
 
 .site__header {
 	grid-area: header;
@@ -23,5 +15,24 @@
 .site__footer {
 	grid-area: footer;
 }
+.site {
 
-@import "no-sidebar";
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"sidebar"
+		"header"
+		"main"
+		"footer";
+
+	@media screen and (min-width : 700px) {
+
+		grid-template-columns: ($size__site-sidebar) auto;
+		grid-template-areas:
+		"header header"
+		"sidebar main"
+		"footer footer";
+	}
+}
+
+// @import "no-sidebar";
