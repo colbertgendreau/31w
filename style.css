@@ -617,6 +617,10 @@ big {
   text-decoration: none;
 }
 
+.site__title {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
 .site__header {
   grid-area: header;
 }

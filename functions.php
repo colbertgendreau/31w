@@ -79,11 +79,11 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 			// print_r($value);
 			$value->title = substr($value->title,7);
 
-			$arrayValue = explode("(", $value->title);
+			$arrayValue = explode(" ", $value->title);
 
 			array_splice($arrayValue, -1);
 
-			$value->title = implode("(", $arrayValue);
+			$value->title = implode(" ", $arrayValue);
 
 			// echo $value->title . '<br>';
 		}
