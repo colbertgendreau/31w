@@ -11,8 +11,12 @@
 
 ?>
 
-	<footer>
-		<p>MOn footer</p>
+	<footer class=site__footer>
+
+		<div><?php get_sidebar( 'primary' ); ?></div>
+		<div>Allo</div>
+		<div>Allo</div>
+		<div>Allo</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
