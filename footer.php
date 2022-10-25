@@ -13,7 +13,8 @@
 
 	<footer class=site__footer>
 
-		<div><?php get_sidebar( 'primary' ); ?></div>
+		<div><?php get_sidebar( 'footer-1' ); ?></div>
+		<div><?php get_sidebar( 'footer-2' ); ?></div>
 		<div>Allo</div>
 		<div>Allo</div>
 		<div>Allo</div>
