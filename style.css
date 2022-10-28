@@ -644,26 +644,32 @@ big {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area {
-  display: none;
+.widget__area-1 {
+  grid-area: sidebar-01;
+}
+
+.widget__area-2 {
+  grid-area: sidebar-02;
 }
 
 .site__footer {
   grid-area: footer;
 }
 
-.site {
+.no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "main" "footer";
 }
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar-01" "header" "main" "sidebar-02" "footer";
+}
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
-  .site .widget__area {
-    grid-area: sidebar;
-    display: block;
+    grid-template-areas: "header header" "sidebar-01 main" "sidebar-02 main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

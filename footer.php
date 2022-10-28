@@ -13,11 +13,10 @@
 
 	<footer class=site__footer>
 
-		<div><?php get_sidebar( 'footer-1' ); ?></div>
-		<div><?php get_sidebar( 'footer-2' ); ?></div>
-		<div>Allo</div>
-		<div>Allo</div>
-		<div>Allo</div>
+		<div><?php get_sidebar( 'footer-01' ); ?></div>
+		<div><?php get_sidebar( 'footer-02' ); ?></div>
+		<div><?php get_sidebar( 'footer-03' ); ?></div>
+		<div><?php get_sidebar( 'footer-04' ); ?></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -7,36 +7,56 @@
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
-.widget__area {
-	display: none;
-}
+// .widget__area {
+// 	display: none;
+// }
 
+.widget__area-1 {
+	grid-area: sidebar-01;
+}
+.widget__area-2 {
+	grid-area: sidebar-02;
+}
 
 .site__footer {
 	grid-area: footer;
 }
+@import "no-sidebar";
+
+
 .site {
-	
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-areas:
-	// "sidebar"
-	"header"
-	"main"
-	"footer";
+		// "sidebar"
+		// "header"
+		// "main"
+		// "footer"
 
-	@media screen and (min-width : 700px) {
-		.widget__area {
-			grid-area: sidebar;
-			display: block;
-		}
+		"sidebar-01"
+		"header"
+		"main"
+		"sidebar-02"
+		"footer"
 		
+		;
+
+
+	@media screen and (min-width : 700px){
+		// display: grid;
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
+
+			// "header header"
+			// "sidebar main"
+			// "footer footer"
+
+			"header header"
+			"sidebar-01 main"
+			"sidebar-02 main"
+			". main"
+			"footer footer"
+			;
 	}
 }
 
-// @import "no-sidebar";
