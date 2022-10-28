@@ -7,3 +7,5 @@ De plus, il y a une sidenar, avec une navigation secondaire et 2 widgets, un vid
 Le footer contient aussi 4 widgets différents.
 
 Les couleurs ont été choisies pour un thème "dark", contrasté, qui est agréable pour les yeux.
+
+Le thème est accessible au https://prom4.sg-host.com/
