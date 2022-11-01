@@ -23,7 +23,8 @@ get_header(); ?>
                     the_post();
                     ?>
                     <h2><a href="<?=the_permalink()?>"><?=the_title()?></a></h2>
-                    <h2><?= the_field('duree') ?></h2>
+                    <h2>Durée du cours : <?= the_field('duree') ?></h2>
+                    <h2>Méthode d'enseignement : <?= the_field('methode') ?></h2>
                     <?php
                     the_content(null, true);
                 endwhile;
