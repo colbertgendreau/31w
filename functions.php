@@ -38,11 +38,6 @@ function under_setup() {
 			'script',
 		)
 	);
-
-
-
-    
-
 }
 
 add_action( 'after_setup_theme', 'under_setup' );
