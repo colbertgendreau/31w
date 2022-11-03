@@ -2,10 +2,13 @@
 
     .menu { // ul
         display: flex;
+        flex-direction: column;
+
         justify-content: space-around;
         list-style-type: none;
         margin: 0;
         padding: 0;
+        width: 100vw;
     }
     .menu-item { // li
         flex: 1;
@@ -23,6 +26,18 @@
         padding: 10px;
 
     }
+
+    @media screen and(min-width:700px) {
+
+        .menu {
+            flex-direction: row;
+
+        }
+
+
+    }
+
+
 } // fin .menu__primaire
 
 /* transformation en CSS */
