@@ -44,6 +44,7 @@ body {
 main {
   display: block;
   margin: 10px;
+  max-width: 100%;
 }
 
 /**
