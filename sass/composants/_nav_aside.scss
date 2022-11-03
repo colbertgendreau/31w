@@ -11,7 +11,7 @@
 }
 
 .chk-burger:checked ~ .burger {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 
 }
 
@@ -22,14 +22,18 @@
 
 .burger {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     top: 60px;
     right: 20px;
     transform: rotate(0deg);
     transition: transform 0.5s;
-    font-size: 2em;
-    z-index: 1;
+    font-size: 4em;
+    z-index: 6;
+    @media screen and(min-width:700px) {
+        display: none;
+    }
+
 }
 .menu__aside {
     display: flex;
@@ -41,6 +45,7 @@
     transition: transform 0.5s;
     background-color: rgb(111, 0, 255);
     padding: 10px;
+    z-index: 5;
 
     
     @media screen and(min-width:700px) {
