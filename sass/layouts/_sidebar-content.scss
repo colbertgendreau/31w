@@ -11,11 +11,11 @@
 // 	display: none;
 // }
 
-.widget__area-1 {
-	grid-area: sidebar-01;
+.site__menu {
+	grid-area: menu;
 }
-.widget__area-2 {
-	grid-area: sidebar-02;
+.site__sidebar {
+	grid-area: sidebar;
 }
 
 .site__footer {
@@ -33,10 +33,10 @@
 		// "main"
 		// "footer"
 
-		"sidebar-01"
+		"menu"
 		"header"
 		"main"
-		"sidebar-02"
+		"sidebar"
 		"footer"
 		
 		;
@@ -52,8 +52,8 @@
 			// "footer footer"
 
 			"header header"
-			"sidebar-01 main"
-			"sidebar-02 main"
+			"menu main"
+			"sidebar main"
 			". main"
 			"footer footer"
 			;

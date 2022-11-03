@@ -41,14 +41,16 @@
                 <?php endif; ?>
             </div><!-- .site-branding -->
         </header><!-- #masthead -->
-        <aside class="widget__area-1">
-                    <h2>Menu secondaire</h2>
+        <aside class="site__menu">
+                    <input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+                    <label class="burger" for="chk-burger">&#9996;</label>
+                    <h2>Menu Secondaire</h2>
                     <?php wp_nav_menu(array(  
                         "menu" => "aside",
                         "container" => "nav",
                         "container_class" => "menu__aside")); ?>
         </aside>
-        <aside class="widget__area-2">
+        <aside class="site__sidebar">
 			<div><?php get_sidebar('aside-01'); ?></div>
 			<div><?php get_sidebar('aside-02'); ?></div>
 		</aside>

@@ -604,6 +604,38 @@ big {
   margin: 10px;
 }
 
+.site-menu {
+  position: relative;
+}
+
+.chk-burger {
+  display: none;
+}
+
+.chk-burger:checked ~ .burger {
+  transform: rotate(90deg);
+}
+
+.burger {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 200px;
+  left: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+  font-size: 2em;
+}
+
+.menu__aside {
+  display: flex;
+  position: absolute;
+}
+@media screen and (min-width: 700px) {
+  .menu__aside {
+    position: static;
+  }
+}
 .menu__aside .menu {
   margin: 0;
   padding: 0;
@@ -644,12 +676,12 @@ big {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area-1 {
-  grid-area: sidebar-01;
+.site__menu {
+  grid-area: menu;
 }
 
-.widget__area-2 {
-  grid-area: sidebar-02;
+.site__sidebar {
+  grid-area: sidebar;
 }
 
 .site__footer {
@@ -665,11 +697,11 @@ big {
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar-01" "header" "main" "sidebar-02" "footer";
+  grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar-01 main" "sidebar-02 main" ". main" "footer footer";
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

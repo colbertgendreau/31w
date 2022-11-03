@@ -1,8 +1,37 @@
 .widget__area {
-    margin: 10px;
-    
+    margin: 10px;   
+}
+
+.site-menu {
+    position: relative;
+}
+
+.chk-burger {
+    display: none;
+}
+
+.chk-burger:checked ~ .burger {
+    transform: rotate(90deg);
+
+}
+
+.burger {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 200px;
+    left: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    font-size: 2em;
 }
 .menu__aside {
+    display: flex;
+    position: absolute;
+
+    @media screen and(min-width:700px) {
+    position: static;        
+    }
     .menu {
         margin: 0;
         padding: 0;
