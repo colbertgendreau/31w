@@ -25,9 +25,14 @@ get_header(); ?>
                     <h2><a href="<?=the_permalink()?>"><?=the_title()?></a></h2>
                     <h2>Durée du cours : <?= the_field('duree') ?></h2>
                     <h2>Méthode d'enseignement : <?= the_field('methode') ?></h2>
+                    <h2>Email du prof : <?= the_field('email') ?></h2>
+                    <h2>Lien : <?= the_field('lien') ?></h2>
                     <?php
                     the_content(null, true);
                 endwhile;
+                ?>
+                <h3>Email : <?= the_field('email') ?></h3>
+                <?php
             endif;
             ?>
         </main>
