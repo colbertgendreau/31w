@@ -14,3 +14,31 @@
     width: 25%;
     
 }
+
+.menu__evenements .evenements__porte {
+    background: blue;
+}
+
+.menu__evenements .evenements__stage {
+    background: orange;
+}
+
+.menu__evenements .evenements__projet {
+    background: greenyellow;
+}
+
+.menu__item__icone {
+    border: 1px solid yellow;
+    height: 50px;
+    width: 50px;
+}
+
+.evenements__porte .menu__item__icone {
+    
+}
+.evenements__projet .menu__item__icone {
+
+}
+.evenements__stage .menu__item__icone {
+
+}
