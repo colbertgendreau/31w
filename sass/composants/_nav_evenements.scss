@@ -1,0 +1,16 @@
+.menu__evenements {
+    
+}
+
+.menu__evenements .menu { //ul
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__evenements .menu-item {
+    width: 25%;
+    
+}

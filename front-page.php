@@ -18,6 +18,12 @@ get_header(); ?>
 
         <main class="site__main">
             <?php
+        wp_nav_menu(array(  
+            "menu" => "evenements",
+            "container" => "nav",
+            "container_class" => "menu__evenements"));
+
+
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();

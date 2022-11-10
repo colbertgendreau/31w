@@ -578,6 +578,18 @@ big {
   font-size: 125%;
 }
 
+.menu__evenements .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__evenements .menu-item {
+  width: 25%;
+}
+
 .menu__primaire .menu {
   display: flex;
   flex-direction: column;
