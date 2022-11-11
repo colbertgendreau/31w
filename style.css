@@ -341,7 +341,7 @@ html {
 }
 
 body {
-  width: 95vw;
+  width: 100%;
   background: rgb(39, 39, 39);
   font-family: "Courier New", Courier, monospace;
 }
@@ -615,7 +615,7 @@ big {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
 }
 .menu__primaire .menu-item {
   flex: 1;
@@ -714,6 +714,10 @@ big {
 
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.site-header {
+  width: 100%;
 }
 
 .site__footer {
