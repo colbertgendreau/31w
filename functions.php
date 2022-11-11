@@ -198,8 +198,8 @@ function my_register_sidebars() {
 
 /**
  *
- *	permet de modifier la requete principale de wordpress "main query"
- *	les articles qui saffichent dans la page daccueil seront les articles de categorie accueil
+ *	La fonction permettra de modifier la requête principale de wordpress « main query »
+ *	Les artcle qui s'afficheront dans la page d'accueil seront les article de catégorie « accueil »
  *
  */
 function igc_31w_filtre_requete( $query ) {
