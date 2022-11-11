@@ -37,7 +37,6 @@ get_header(); ?>
                     the_content(null, true);
                 endwhile;
                 ?>
-                <h3>Email : <?= the_field('email') ?></h3>
                 <?php
             endif;
             ?>
