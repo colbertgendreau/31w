@@ -20,3 +20,18 @@ Il y a maintenant un champ "méthode d'enseignement", "email du prof", et un "li
 Jai adapté le menu du aside pour qu'il prenne tout lécran en mode mobile, et qu'il disparaisse lorsque l'on clique sur l'icone hamburger.
 
 J'ai aussi adapté le menu principal pour qu'il passe en display flex en direction "row" en mode mobile.
+
+Le thème est accessible au https://prom4.sg-host.com/
+
+
+## EXERCICE 4
+
+
+J'ai amélioré l'apparence du carrousel, 
+rajouté un bloc pour des pages "événements" dans le haut du site.
+Relié le lien "cours", dans le menu, vers une page ou sont affichés tout les articles de la catégorie "cours".
+
+
+Le thème est accessible au https://prom4.sg-host.com/
+
+

@@ -732,6 +732,16 @@ big {
   border: 1px solid gray;
 }
 
+.liste {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.liste__cours {
+  flex: 0 1 20%;
+}
+
 .site__header {
   grid-area: header;
 }
