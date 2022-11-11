@@ -66,25 +66,29 @@ function mon_31w_register_nav_menu(){
 }
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
-/************ pour filtrer chacun des elements du menu */
+/**
+ * filtre le menu «aside»
+ * @arg  $obj_menu, $arg
+ */
 function igc31w_filtre_choix_menu($obj_menu, $arg){
-    //var_dump($obj_menu);
-    foreach($obj_menu as $cle => $value) {
-		if ($arg->menu == "aside"){
-			// print_r($value);
-			$value->title = substr($value->title,7);
-
-			$arrayValue = explode(" ", $value->title);
-
-			array_splice($arrayValue, -1);
-
-			$value->title = implode(" ", $arrayValue);
-
-			// echo $value->title . '<br>';
-		}
-		$value->title = wp_trim_words($value->title,3,"...");
-			
+    //echo "/////////////////  obj_menu";
+    // var_dump($obj_menu);
+    //  echo "/////////////////  arg";
+    //  var_dump($arg);
+ 
+    if ($arg->menu == "aside"){
+    foreach($obj_menu as $cle => $value)
+    {
+      //  print_r($value);
+	  /* retirer le sigle numérique du cours */
+       $value->title = substr($value->title,7);
+	   /* retirer la durée du cours ex: (75h) */
+	   $value->title = substr($value->title,0,strpos($value->title, '('));
+       $value->title = wp_trim_words($value->title,3," ... ");
+        //echo $value->title . '<br>';
+     } 
     }
+    //die();
     return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10, 2);
