@@ -16,7 +16,7 @@
 <?php get_header(); ?>
 
     <main class="site__main">
-    <section class="liste">
+    <!-- <section class="liste"> -->
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
@@ -33,7 +33,7 @@
                 
             <?php endwhile; ?>
         <?php endif; ?>
-    </section>
+    <!-- </section> -->
     </main>    
 <?php get_footer(); ?>
 </html>
