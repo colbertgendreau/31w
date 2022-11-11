@@ -587,19 +587,21 @@ big {
 }
 
 .menu__evenements .menu-item {
-  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  width: 33%;
 }
 
 .menu__evenements .evenements__porte {
-  background: blue;
+  background: rgb(241, 135, 255);
 }
 
 .menu__evenements .evenements__stage {
-  background: orange;
+  background: rgb(197, 135, 255);
 }
 
 .menu__evenements .evenements__projet {
-  background: greenyellow;
+  background: rgb(170, 80, 255);
 }
 
 .menu__item__icone {
