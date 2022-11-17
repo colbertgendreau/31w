@@ -739,7 +739,7 @@ big {
 }
 
 .liste__cours {
-  flex: 1;
+  flex: 0 1 20%;
 }
 
 .site__header {

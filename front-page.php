@@ -21,13 +21,14 @@ get_header(); ?>
         wp_nav_menu(array(  
             "menu" => "evenements",
             "container" => "nav",
-            "container_class" => "menu__evenements"));
+            "container_class" => "menu__evenements")); ?>
 
-
-            if ( have_posts() ) :
-                while ( have_posts() ) :
-                    the_post();
-                    ?>
+                <section class="liste">
+                    <?php
+                if ( have_posts() ) :
+                    while ( have_posts() ) :
+                    the_post();?>
+                    <article class="liste_cours">
                     <h2><a href="<?=the_permalink()?>"><?=the_title()?></a></h2>
                     <h2>Durée du cours : <?= the_field('duree') ?></h2>
                     <h2>Méthode d'enseignement : <?= the_field('methode') ?></h2>
@@ -37,11 +38,12 @@ get_header(); ?>
                     // the_content(null, true);
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('thumbnail');
-                    }                    
-                    wp_trim_words(get_the_excerpt(),10,"...");
-                endwhile;
-                ?>
-                <?php
+                    }  ?>                  
+                    <?= wp_trim_words(get_the_excerpt(),10,"...permalien");?>
+                    <?php endwhile;?>
+                </article>
+                    </section>
+                    <?php
             endif;
             ?>
         </main>
