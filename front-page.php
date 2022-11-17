@@ -34,7 +34,11 @@ get_header(); ?>
                     <h2>Email du prof : <?= the_field('email') ?></h2>
                     <h2>Lien : <?= the_field('lien') ?></h2>
                     <?php
-                    the_content(null, true);
+                    // the_content(null, true);
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('thumbnail');
+                    }                    
+                    wp_trim_words(get_the_excerpt(),10,"...");
                 endwhile;
                 ?>
                 <?php
