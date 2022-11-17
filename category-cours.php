@@ -15,25 +15,30 @@
 <!-- h1 class="trace">front-page.php</h1 -->
 <?php get_header(); ?>
 
-    <main class="site__main">
-    <!-- <section class="liste"> -->
-    <?php
-		if ( have_posts() ) :
-            while ( have_posts() ) :
-				the_post(); ?>
-                <article class="liste__cours">
-                <h1><a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?></a></h1>
-                <h2>Durée du cours: <?php the_field('duree'); ?></h2>
-                <?php the_content(null, true); 
-                //wp_trim_words()
-                ?>
-              
-                <article>
-                
-            <?php endwhile; ?>
-        <?php endif; ?>
-    <!-- </section> -->
+<main class="site__main">
+<section class="liste">
+                    <?php
+                if ( have_posts() ) :
+                    while ( have_posts() ) :
+                    the_post();?>
+                    <article class="liste__cours">
+                    <h2><a href="<?=the_permalink()?>"><?=the_title()?></a></h2>
+                    <h3>Durée du cours : <?= the_field('duree') ?></h3>
+                    <h3>Méthode d'enseignement : <?= the_field('methode') ?></h3>
+                    <h3>Email du prof : <?= the_field('email') ?></h3>
+                    <h3>Lien : <?= the_field('lien') ?></h3>
+                    <?php
+                    // the_content(null, true);
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('thumbnail');
+                    }  ?>                  
+                    <?= wp_trim_words(get_the_excerpt(),10,"...permalien");?>
+                </article>
+                    <?php endwhile;?>
+                    </section>
+                    <?php
+            endif;
+            ?>
     </main>    
 <?php get_footer(); ?>
 </html>

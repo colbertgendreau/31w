@@ -28,7 +28,7 @@ get_header(); ?>
                 if ( have_posts() ) :
                     while ( have_posts() ) :
                     the_post();?>
-                    <article class="liste_cours">
+                    <article class="liste__cours">
                     <h2><a href="<?=the_permalink()?>"><?=the_title()?></a></h2>
                     <h2>Durée du cours : <?= the_field('duree') ?></h2>
                     <h2>Méthode d'enseignement : <?= the_field('methode') ?></h2>
@@ -40,8 +40,8 @@ get_header(); ?>
                         the_post_thumbnail('thumbnail');
                     }  ?>                  
                     <?= wp_trim_words(get_the_excerpt(),10,"...permalien");?>
-                    <?php endwhile;?>
                 </article>
+                    <?php endwhile;?>
                     </section>
                     <?php
             endif;

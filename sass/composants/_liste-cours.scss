@@ -1,9 +1,18 @@
 .liste {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
 
-.liste__cours {
-    flex: 0 1 20%;
+    h2 {
+        margin: 0;
+    }
+    
+    .liste__cours {
+        margin: 10px;
+        padding: 10px;
+        flex: 0 1 20%;
+        color: white;
+        box-shadow: 0px 0px 5px white;
+        border-radius: 8px;
+    }
 }
