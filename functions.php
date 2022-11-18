@@ -13,6 +13,10 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
+// INCLUSION DU CUSTOMIZER DE BACKGROUND COLOR
+
+require_once("options/apparence.php");
+
 function under_setup()
 {
 

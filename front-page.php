@@ -38,8 +38,21 @@ get_header(); ?>
                     // the_content(null, true);
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('thumbnail');
-                    }  ?>                  
-                    <?= wp_trim_words(get_the_excerpt(),10,"...permalien");?>
+                    }  ?>    
+                    <?php $monTableau = get_the_category(); 
+                    foreach($monTableau as $cle) {
+                        if($cle->slug == "galerie") {
+                            $boolGalerie = true;
+                        };
+                    }
+                    if($boolGalerie) {
+                        the_content();
+                    } else {
+                      echo wp_trim_words(get_the_excerpt(),10,"...permalien");
+                }
+                    ?>
+
+
                 </article>
                     <?php endwhile;?>
                     </section>
