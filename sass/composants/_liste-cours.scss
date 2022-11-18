@@ -1,8 +1,10 @@
 .liste {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+    padding-top: 30px;
+
     h2 {
         margin: 0;
     }
@@ -10,9 +12,9 @@
     .liste__cours {
     
 
-        margin: 10px 0;
+        // margin: 10px 0;
         padding: 10px;
-        flex: 0 1 32%;
+        flex: 1 1 20%;
         color: white;
         box-shadow: 0px 0px 5px inset white;
         border-radius: 8px;

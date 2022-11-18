@@ -40,6 +40,7 @@ get_header(); ?>
                         the_post_thumbnail('thumbnail');
                     }  ?>    
                     <?php $monTableau = get_the_category(); 
+                    $boolGalerie = false;
                     foreach($monTableau as $cle) {
                         if($cle->slug == "galerie") {
                             $boolGalerie = true;
