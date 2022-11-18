@@ -6,4 +6,7 @@
 .site__footer>div {
     width: 20%;
     border: 1px solid gray;
+    box-shadow: $box__shadow;
+    border-radius: 8px;
+    background: $color__background-evenement;
 }

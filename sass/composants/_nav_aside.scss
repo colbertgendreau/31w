@@ -69,12 +69,16 @@
         
     }
     a {
+        padding: 5px;
         text-decoration: none;
-
+    }
+    .menu-item:hover {
+        background: $couleur__link;
+        border-radius: 5px;
     }
 
 }
-    
+
 // .menu__aside{}
 // .menu__aside .menu{}
 // .menu__aside .menu-item{}

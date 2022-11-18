@@ -14,19 +14,20 @@
     border-radius: 10px;
     padding: 10px;
     width: 33%;
+    box-shadow: $box__shadow;
     
 }
 
 .menu__evenements .evenements__porte {
-    background: rgb(241, 135, 255);
+    background: $color__background-evenement;
 }
 
 .menu__evenements .evenements__stage {
-    background: rgb(197, 135, 255);
+    background: $color__background-evenement;
 }
 
 .menu__evenements .evenements__projet {
-    background: rgb(170, 80, 255);
+    background: $color__background-evenement;
 }
 
 .menu__item__icone {

@@ -15,7 +15,7 @@ Text Domain: 31w
 /*------------------------------ couleur fields input text */
 /*------------------------------ couleur hr (ligne horizontale) */
 /*------------------------------ simple */
-/*------------------------------ couleur de navigation */
+/*------------------------------ couleur de evenements */
 /*------------------------ simple */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -113,6 +113,7 @@ kbd,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  color: white;
 }
 
 /**
@@ -120,6 +121,7 @@ samp {
  */
 small {
   font-size: 80%;
+  color: white;
 }
 
 /**
@@ -436,6 +438,7 @@ h1 {
 
 h2 {
   color: rgb(255, 0, 242);
+  font-size: 20px;
 }
 
 h3, h4, h5, h6 {
@@ -455,34 +458,14 @@ hr {
 
 a {
   color: rgb(204, 0, 255);
-}
-a:visited {
-  color: rgb(255, 255, 255);
-}
-a:hover, a:focus, a:active {
-  color: rgb(77, 77, 77);
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
+  text-decoration: none;
 }
 
 .menu a {
-  color: rgb(204, 0, 255);
-}
-.menu a:visited {
-  color: rgb(255, 255, 255);
-}
-.menu a:hover, .menu a:focus, .menu a:active {
-  color: rgb(77, 77, 77);
+  color: white;
 }
 .menu a:focus {
-  outline: thin dotted;
-}
-.menu a:hover, .menu a:active {
-  outline: 0;
+  color: rgb(77, 77, 77);
 }
 
 ul,
@@ -551,13 +534,16 @@ address {
 }
 
 pre {
-  background: rgb(153, 192, 141);
+  background: rgb(170, 80, 255);
   font-family: "Courier New", Courier, monospace;
   line-height: 0.8em;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
+}
+pre a {
+  color: black;
 }
 
 code,
@@ -595,14 +581,15 @@ big {
   border-radius: 10px;
   padding: 10px;
   width: 33%;
+  box-shadow: 0px 0px 20px inset white;
 }
 
 .menu__evenements .evenements__porte {
-  background: rgb(241, 135, 255);
+  background: rgb(170, 80, 255);
 }
 
 .menu__evenements .evenements__stage {
-  background: rgb(197, 135, 255);
+  background: rgb(170, 80, 255);
 }
 
 .menu__evenements .evenements__projet {
@@ -619,12 +606,14 @@ big {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 .menu__primaire .menu-item {
+  height: 100px;
   flex: 1;
   background: rgb(133, 133, 133);
 }
@@ -640,6 +629,9 @@ big {
 @media screen and (min-width: 700px) {
   .menu__primaire .menu {
     flex-direction: row;
+  }
+  .menu__primaire a {
+    padding: 30px;
   }
 }
 
@@ -712,7 +704,12 @@ big {
   padding: 5px 0;
 }
 .menu__aside a {
+  padding: 5px;
   text-decoration: none;
+}
+.menu__aside .menu-item:hover {
+  background: rgb(204, 0, 255);
+  border-radius: 5px;
 }
 
 .site__branding {
@@ -730,7 +727,7 @@ big {
 .custom-logo {
   position: absolute;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .custom-logo {
     display: none;
   }
@@ -744,6 +741,9 @@ big {
 .site__footer > div {
   width: 20%;
   border: 1px solid gray;
+  box-shadow: 0px 0px 20px inset white;
+  border-radius: 8px;
+  background: rgb(170, 80, 255);
 }
 
 .liste {
@@ -760,8 +760,14 @@ big {
   padding: 10px;
   flex: 1 1 20%;
   color: white;
-  box-shadow: 0px 0px 5px inset white;
+  box-shadow: 0px 0px 20px inset white;
   border-radius: 8px;
+}
+
+.attachment-thumbnail {
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
 }
 
 .site__header {

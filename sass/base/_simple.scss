@@ -26,13 +26,16 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
+	background: $color__background-evenement;
 	font-family: $font__pre;
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
+	a {
+		color: black;
+	}
 }
 
 code,
