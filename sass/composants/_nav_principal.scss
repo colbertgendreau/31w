@@ -14,7 +14,7 @@
     .menu-item { // li
         height: 100px;
         flex: 1;
-        background: rgb(133, 133, 133);
+        background: $couleur__link;
         
     }
     .menu-item:hover {
@@ -26,6 +26,8 @@
         text-decoration: none;
         color: #fff;
         padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
 
     }
 
