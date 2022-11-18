@@ -619,6 +619,7 @@ big {
 }
 .menu__primaire .menu-item:hover {
   background: #555;
+  border: 1px solid white;
 }
 .menu__primaire a {
   display: block;
@@ -692,8 +693,11 @@ big {
     position: static;
     transform: translateX(0);
     width: 100%;
-    height: 80%;
+    height: 110%;
     background-color: rgba(111, 0, 255, 0);
+  }
+  .menu__aside .menu-item {
+    height: 30px;
   }
 }
 .menu__aside .menu {
@@ -704,6 +708,7 @@ big {
   font-size: 12px;
   list-style: none;
   padding: 5px 0;
+  height: 30px;
 }
 .menu__aside a {
   padding: 5px;
@@ -712,6 +717,7 @@ big {
 .menu__aside .menu-item:hover {
   background: rgb(204, 0, 255);
   border-radius: 5px;
+  border: 1px solid white;
 }
 
 .site__branding {
