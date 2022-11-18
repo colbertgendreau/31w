@@ -10,13 +10,15 @@
     }
     
     .liste__cours {
-    
-
         // margin: 10px 0;
         padding: 10px;
         flex: 1 1 20%;
         color: white;
         box-shadow: $box__shadow;
         border-radius: 8px;
+    }
+    .liste__cours:hover {
+        box-shadow: $box__shadow-hover;
+        transition-duration: 0.4s;    
     }
 }

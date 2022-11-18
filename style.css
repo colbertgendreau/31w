@@ -584,6 +584,11 @@ big {
   box-shadow: 0px 0px 20px inset white;
 }
 
+.menu__evenements .menu-item:hover {
+  box-shadow: 0px 0px 40px inset white;
+  transition-duration: 0.4s;
+}
+
 .menu__evenements .evenements__porte {
   background: rgb(170, 80, 255);
 }
@@ -618,8 +623,9 @@ big {
   background: rgb(204, 0, 255);
 }
 .menu__primaire .menu-item:hover {
-  background: #555;
-  border: 1px solid white;
+  box-shadow: 0px 0px 40px inset white;
+  border-radius: 8px;
+  transition-duration: 0.4s;
 }
 .menu__primaire a {
   display: block;
@@ -778,6 +784,10 @@ big {
   color: white;
   box-shadow: 0px 0px 20px inset white;
   border-radius: 8px;
+}
+.liste .liste__cours:hover {
+  box-shadow: 0px 0px 40px inset white;
+  transition-duration: 0.4s;
 }
 
 .attachment-thumbnail {

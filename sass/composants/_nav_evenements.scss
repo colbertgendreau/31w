@@ -18,6 +18,12 @@
     
 }
 
+.menu__evenements .menu-item:hover {
+    box-shadow: $box__shadow-hover;
+    transition-duration: 0.4s;
+
+}
+
 .menu__evenements .evenements__porte {
     background: $color__background-evenement;
 }
