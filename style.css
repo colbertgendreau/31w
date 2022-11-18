@@ -730,6 +730,11 @@ big {
 .custom-logo {
   position: absolute;
 }
+@media screen and (min-width: 700px) {
+  .custom-logo {
+    display: none;
+  }
+}
 
 .site__footer {
   display: flex;
