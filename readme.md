@@ -31,9 +31,6 @@ J'ai amélioré l'apparence du carrousel,
 rajouté un bloc pour des pages "événements" dans le haut du site.
 Relié le lien "cours", dans le menu, vers une page ou sont affichés tout les articles de la catégorie "cours".
 
-Malheureusement, la page d'accueil n'affiche plus les articles lorsque dployé sur Siteground. Par contre, tout fonctionne localement...
-Pour avoir acces aux articles et au carrousel, il faut cliquer sur le lien "cours"  dans le menu principal.
-
 Le thème est accessible au https://prom4.sg-host.com/
 
 
