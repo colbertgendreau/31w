@@ -640,6 +640,8 @@ big {
     flex-direction: row;
   }
   .menu__primaire a {
+    color: black;
+    font-size: 20px;
     padding: 30px;
   }
 }
