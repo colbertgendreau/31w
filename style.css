@@ -731,18 +731,43 @@ big {
   display: flex;
   padding: 10px;
   text-align: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 730px) {
+  .site__branding {
+    flex-direction: column;
+  }
 }
 
 .site__branding img {
   width: 100px;
 }
 
+.site__branding-titre {
+  display: flex;
+  align-items: center;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
+  width: 200px;
+}
+
+.site__description {
+  width: 200px;
+}
+
+.recherche__sidebar {
+  color: white;
+  margin-left: auto;
 }
 
 .site-header {
   width: 100%;
+}
+
+.custom-logo {
+  display: none;
 }
 
 .site__footer {
