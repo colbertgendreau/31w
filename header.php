@@ -33,7 +33,9 @@
                             "container" => "nav",
                             "container_class" => "menu__primaire")); ?>
             <div class="site__branding">
-                <?= get_custom_logo(); ?>
+                <div class="site__branding-logo">
+                    <?= get_custom_logo(); ?>
+                </div>
                 <h1 class="site__title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                 <?php
                 $under_description = get_bloginfo('description', 'display');
@@ -42,6 +44,11 @@
                     <p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                                                 ?></p>
                 <?php endif; ?>
+                <div class="recherche__sidebar">
+                    <div><?php get_sidebar('header-01'); ?></div>
+                    <div><?php get_sidebar('header-02'); ?></div>
+                </div>
+
             </div><!-- .site-branding -->
         </header><!-- #masthead -->
         <aside class="site__menu">

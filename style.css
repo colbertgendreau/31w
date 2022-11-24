@@ -498,8 +498,7 @@ dd {
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
-iframe,
-object {
+iframe {
   max-width: 100%;
 }
 
@@ -728,7 +727,14 @@ big {
 }
 
 .site__branding {
+  align-items: center;
+  display: flex;
+  padding: 10px;
   text-align: center;
+}
+
+.site__branding img {
+  width: 100px;
 }
 
 .site__title {
@@ -737,15 +743,6 @@ big {
 
 .site-header {
   width: 100%;
-}
-
-.custom-logo {
-  position: absolute;
-}
-@media screen and (max-width: 700px) {
-  .custom-logo {
-    display: none;
-  }
 }
 
 .site__footer {

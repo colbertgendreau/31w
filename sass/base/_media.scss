@@ -1,9 +1,13 @@
 /* Make sure embeds and iframes fit their containers. */
 embed,
-iframe,
-object {
+iframe{
 	max-width: 100%;
 }
+
+// object {
+// 	max-width: 100%;
+	
+// }
 
 img {
 	display: block;

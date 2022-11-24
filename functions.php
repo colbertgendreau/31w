@@ -229,7 +229,7 @@ function my_register_sidebars()
 	/* Register de 'header-02' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'header-01',
+			'id'            => 'header-02',
 			'name'          => __('Sidebar - header-02'),
 			'description'   => __('deuxieme sidebar du header'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
