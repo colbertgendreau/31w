@@ -9,16 +9,18 @@
 get_header(); ?>
 <main>
  <h2>Resultats de Recherche</h2>
+ 
+    <p class="page-title"><?php printf( __( 'Élément de recherche: %s', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?></p>
    <?php while (have_posts()): the_post(); ?>
         <h3><a href="<?=the_permalink()?>"><?=the_title()?></a></h3>
-         <p><?= wp_trim_words(get_the_excerpt(),20,"...");?><a href="<?=the_permalink()?>">→</a></p>
+         <p><?= wp_trim_words(get_the_excerpt(),20,"...");?><a href="<?=the_permalink()?>">⇛</a></p>
          
 
    <?php endwhile ?>
 
 
    <?php global $wp_query; ?>
-<p class="nbrResultats"><?php echo $wp_query->found_posts.' resultats trouvés.'; ?>⇛</p>
+<p class="nbrResultats"><?php echo $wp_query->found_posts.' resultats trouvés.'; ?></p>
 </main>
  
 <?php get_footer(); ?>
