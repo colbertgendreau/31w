@@ -13,9 +13,11 @@ get_header(); ?>
         <h3><a href="<?=the_permalink()?>"><?=the_title()?></a></h3>
          <p><?= wp_trim_words(get_the_excerpt(),20,"...");?></p>
 
-     
    <?php endwhile ?>
+
+
+   <?php global $wp_query; ?>
+<p class="nrbResultats"><?php echo $wp_query->found_posts.' resultats trouvés.'; ?></p>
 </main>
  
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

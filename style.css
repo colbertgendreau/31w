@@ -819,6 +819,10 @@ big {
   width: 100px;
 }
 
+.nbrResultats {
+  border-top: 1px solid white;
+}
+
 .site__header {
   grid-area: header;
 }
