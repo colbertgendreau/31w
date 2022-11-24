@@ -4,11 +4,16 @@ Fait par Colbert Gendreau
 
 ## EXAMEN FINAL
 
+Dans ce travail, j'ai ajouté 2 sidebars dans le header, avec 2 widgets.
+Une barre de recherche, et des icones de reseau sociaux.
+J'ai adapté le header avec les widgets pour un écran desktop et mobile.
+J'ai créé un template pour l'affichge des résultats de la recherche qui affiche le titre des articles trouvés, les 20 premiers mots de l'article, et une fleche qui est un lien vers l'article complet.
+De plus, j'ai ajouté une fonction qui montre l'élément de recherche, et une autre, pour montrer le nombre de résultats trouvés.
 
 
+Tout ca a été déployé sur siteground au
 
-
-
+https://prom4.sg-host.com/
 
 
 ## GÉNÉRAL
