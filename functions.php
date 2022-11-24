@@ -213,6 +213,32 @@ function my_register_sidebars()
 		)
 	);
 
+	/* Register de 'header-01' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'header-01',
+			'name'          => __('Sidebar - header-01'),
+			'description'   => __('premier sidebar du header'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	/* Register de 'header-02' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'header-01',
+			'name'          => __('Sidebar - header-02'),
+			'description'   => __('deuxieme sidebar du header'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
 
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
