@@ -32,7 +32,7 @@
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('thumbnail');
                     }  ?>                  
-                    <?= wp_trim_words(get_the_excerpt(),10,"...permalien");?>
+                    <?= wp_trim_words(get_the_excerpt(),10,"...");?>
                 </article>
                     <?php endwhile;?>
                     </section>
